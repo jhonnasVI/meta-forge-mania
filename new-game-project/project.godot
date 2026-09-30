@@ -13,7 +13,7 @@ config_version=5
 config/name="Meta Forge Mania"
 run/main_scene="uid://c00o5fajkqskb"
 config/features=PackedStringArray("4.7", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="uid://cbsk2s5j45r16"
 
 [display]
 
