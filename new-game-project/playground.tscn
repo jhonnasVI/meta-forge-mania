@@ -14,7 +14,7 @@ fill_from = Vector2(0, 1)
 fill_to = Vector2(0, 1)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_chewe"]
-size = Vector2(32, 32)
+size = Vector2(31.997774, 32.01081)
 
 [node name="Playground" type="Node2D" unique_id=44239911]
 
@@ -39,8 +39,8 @@ texture = SubResource("GradientTexture2D_chewe")
 shape = SubResource("RectangleShape2D_chewe")
 
 [node name="Sprite2D3" type="Sprite2D" parent="." unique_id=971861865]
-position = Vector2(42, 214.49998)
-scale = Vector2(1.5625, 1.7812501)
+position = Vector2(49, 205)
+scale = Vector2(2, 2)
 texture = SubResource("GradientTexture2D_chewe")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Sprite2D3" unique_id=14475407]
@@ -49,25 +49,26 @@ texture = SubResource("GradientTexture2D_chewe")
 shape = SubResource("RectangleShape2D_chewe")
 
 [node name="Sprite2D4" type="Sprite2D" parent="." unique_id=410894869]
-position = Vector2(139.02191, 248.09496)
+position = Vector2(150.20654, 240.83786)
 rotation = 0.45164412
-scale = Vector2(5.7459927, 1.5265077)
+scale = Vector2(5.7438354, 1.9265687)
 texture = SubResource("GradientTexture2D_chewe")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Sprite2D4" unique_id=180504387]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D4/StaticBody2D" unique_id=1962526458]
+position = Vector2(0.0011138916, -0.0054092407)
 scale = Vector2(1, 1.0000001)
 shape = SubResource("RectangleShape2D_chewe")
 
-[node name="Sprite2D5" type="Sprite2D" parent="." unique_id=744972322]
-position = Vector2(380.00003, 201.90625)
-scale = Vector2(2.1249995, 2.8066404)
+[node name="Sprite2D5" type="Sprite2D" parent="." unique_id=503807296]
+position = Vector2(384, 205)
+scale = Vector2(2, 2)
 texture = SubResource("GradientTexture2D_chewe")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="Sprite2D5" unique_id=811089387]
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite2D5" unique_id=1606562265]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D5/StaticBody2D" unique_id=1756607610]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D5/StaticBody2D" unique_id=1346173187]
 shape = SubResource("RectangleShape2D_chewe")
 
 [node name="Player" parent="." unique_id=1181173013 instance=ExtResource("1_rupst")]
