@@ -29,7 +29,7 @@ texture = SubResource("GradientTexture2D_chewe")
 shape = SubResource("RectangleShape2D_chewe")
 
 [node name="Sprite2D2" type="Sprite2D" parent="." unique_id=1365452913]
-position = Vector2(6, 126.5)
+position = Vector2(-5, 125.00001)
 scale = Vector2(1.3750001, 9.40625)
 texture = SubResource("GradientTexture2D_chewe")
 
