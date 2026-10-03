@@ -1,10 +1,42 @@
 [gd_scene format=3 uid="uid://c00o5fajkqskb"]
 
-[ext_resource type="Texture2D" uid="uid://cbsk2s5j45r16" path="res://metroidvania_logo.svg" id="1_rupst"]
+[ext_resource type="PackedScene" uid="uid://bqtnko2f5d48p" path="res://player/player.tscn" id="1_rupst"]
 
-[node name="Node2D" type="Node2D" unique_id=44239911]
+[sub_resource type="Gradient" id="Gradient_edjgo"]
+offsets = PackedFloat32Array(0.90625, 0.95913464, 1)
+colors = PackedColorArray(0, 0, 0, 1, 0.6514423, 0.6514423, 0.6514423, 1, 0, 0, 0, 1)
 
-[node name="MetroidvaniaLogo" type="Sprite2D" parent="." unique_id=2014019059]
-position = Vector2(238.00002, 135)
-scale = Vector2(0.94363636, 0.9478114)
-texture = ExtResource("1_rupst")
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_chewe"]
+gradient = SubResource("Gradient_edjgo")
+width = 32
+height = 32
+fill_from = Vector2(0, 1)
+fill_to = Vector2(0, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_chewe"]
+size = Vector2(32, 32)
+
+[node name="Playground" type="Node2D" unique_id=44239911]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1193481964]
+position = Vector2(241, 257)
+scale = Vector2(16.0625, 1.25)
+texture = SubResource("GradientTexture2D_chewe")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite2D" unique_id=513502461]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/StaticBody2D" unique_id=125903882]
+shape = SubResource("RectangleShape2D_chewe")
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=1365452913]
+position = Vector2(6, 126.5)
+scale = Vector2(1.3750001, 9.40625)
+texture = SubResource("GradientTexture2D_chewe")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite2D2" unique_id=1636508357]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D2/StaticBody2D" unique_id=757485909]
+shape = SubResource("RectangleShape2D_chewe")
+
+[node name="Player" parent="." unique_id=1181173013 instance=ExtResource("1_rupst")]
+position = Vector2(287, 58)
